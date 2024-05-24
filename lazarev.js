@@ -129,7 +129,6 @@ function imageEffect() {
         y: event.clientY - div.getBoundingClientRect().y,
         ease: "power2.out",
       });
-      console.log(event);
     });
   });
 }
