@@ -134,15 +134,25 @@ function imageEffect() {
 }
 
 // * Function for SplitText effect
+
 function splitEffect() {
   let split = new SplitType("#page1 h1");
   gsap.to(".char", {
     y: 0,
-    stagger: 0.06,
+    stagger: 0.03,
     duration: 0.1,
     ease: "power3.out",
   });
 }
+function svgAnimation() {
+  let svg = document.querySelector("#svg");
+  setTimeout(() => {
+    svg.style.opacity = 1;
+    svg.style.transform = "scale(1)";
+  }, 600);
+}
+
+svgAnimation();
 
 // * Function for video interaction
 function videoEffect() {

@@ -219,10 +219,8 @@
 
  .char {
      transform: translateY(250px);
-     transition: transform .3s;
-     margin: 0;
-     padding: 0;
-     font-family: "for Heading";
+     transition: transform .1s;
+    font-family: "for Heading";
  }
 
  #page1 h1 svg {
@@ -231,6 +229,8 @@
      cursor: pointer;
      width: 6.5vw;
      transition: all ease .3s;
+     opacity: 0;
+     transform: scale(0);
  }
 
  #page1 h1 svg:hover {
