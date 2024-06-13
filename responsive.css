@@ -1,0 +1,243 @@
+/* Extra Large devices */
+@media (max-width: 1200px) {}
+
+/* Large devices */
+@media (max-width: 992px) {}
+
+/* Medium Devices */
+@media (max-width: 768px) {}
+
+/* Small devices */
+@media (max-width: 576px) {
+
+    #bar {
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    nav svg {
+        width: 3rem;
+        height: 3rem;
+        margin-left: 20vw;
+    }
+
+    nav .homebtn::after {
+        content: "";
+        width: 0%;
+        height: 0%;
+    }
+
+    nav {
+        width: 100%;
+        height: 8vh;
+        padding: 1vw 6vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-part2,
+    .nav-elem {
+        display: block;
+    }
+
+    .responsive-nav h4 {
+        display: block;
+        font-size: 6vmin;
+        overflow: visible;
+        border-bottom: 1px solid white;
+        padding: 40px 0px 10px 0px;
+        margin-bottom: 12px;
+    }
+
+    .responsive-nav h5 span {
+        display: block;
+        font-size: 4vmin;
+        overflow: visible;
+        line-height: 45px;
+        /* padding: 10px 0px 10px 0px; */
+    }
+
+    .responsive-nav {
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        background-color: var(--black);
+        left: 0%;
+        top: 5vh;
+        z-index: -99;
+        color: white;
+        padding: 5vh 6vw;
+        opacity: 0;
+        display: none;
+    }
+
+
+
+    .homebtn:hover.homebtn::after {
+        width: 0%;
+    }
+
+    nav .logo {
+        font-size: 6vw;
+        font-family: "for Heading";
+
+    }
+
+    .nav-bottom {
+        border: none;
+    }
+
+    .homebtn {
+        color: transparent;
+        background-color: transparent;
+    }
+
+    #page1 {
+        width: 100%;
+        min-height: 70vh;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        padding: 0px 6vw;
+    }
+
+    #page1 h1 {
+        font-size: 14vmin;
+        width: 80%;
+        font-weight: 700;
+        line-height: 14vmin;
+        width: 70%;
+        margin-top: 4vmax;
+        clip-path: polygon(0, 0, 0, 0, 0)
+    }
+
+    #page1 p {
+        margin-top: 5vmax;
+        font-weight: 500;
+        font-size: 5.5vmin;
+        text-align: left;
+        width: 79%;
+        margin-bottom: 2vmax;
+    }
+
+    #page1 h5 {
+        font-weight: 500;
+        font-size: 3.4vmin;
+        border-radius: 20px;
+        padding: .5vmax 1vmax;
+    }
+
+    #moving-div {
+        width: 100%;
+        margin: 5vmax 0px;
+
+    }
+
+    #moving-div .move img {
+        height: 8vmin;
+    }
+
+    .page2-main-content {
+        flex-direction: column;
+    }
+
+    .page2-left {
+        width: 100%;
+        height: 80vmin;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3vmin;
+        padding-top: 5vh;
+    }
+
+    .page2-left h5 {
+        font-weight: 600;
+        font-size: 4vmin;
+        white-space: wrap;
+        width: 45%;
+    }
+
+    .page2-left p {
+        font-weight: 500;
+        font-size: 5vmin;
+        width: 100%;
+        text-align: left;
+        color: var(--white);
+    }
+
+    .page2-right {
+        width: 100%;
+        height: 180vmax;
+    }
+
+    .image-effect-div {
+        padding: 7vmax 0vmin;
+        display: flex;
+        align-items: start;
+        justify-content: end;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid var(--border-top-color);
+        padding-top: 3vh;
+        transition: all ease .3s;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .image-effect-div img {
+        position: absolute;
+        top: 5%;
+        margin-bottom : 2.5vmax;
+        width:17vmax;
+        height: 17vmax;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+    }
+
+    .page2-right h2 {
+        font-size: 6.2vmin;
+        font-weight: 500;
+        width: 160%;
+        margin-bottom: 2.5vmax;
+    }
+
+    .page2-right p {
+        font-size: 3.7vmin;
+        width: 150%;
+    }
+
+    .image-effect-div svg {
+        width: 4vmin;
+        position: relative;
+        padding: 3px 0px 2px 2px;
+        transition: all ease-in .2s;
+
+    }
+
+    #hiddenArrow {
+        display: none;
+
+    }
+
+    .arrow {
+        width: 5vmin;
+        height: 5vmin;
+        overflow: visible;
+        /* border: 1px solid white; */
+        border-radius: 50%;
+        position: absolute;
+        right: 7%;
+        z-index: 9;
+
+    }
+
+
+
+
+}

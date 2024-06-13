@@ -152,10 +152,7 @@ function svgAnimation() {
   }, 600);
 }
 
-svgAnimation();
-
-// * Function for video interaction
-function videoEffect() {
+function playVdieo() {
   // * Show play button text on hover
   playBtn.addEventListener("mouseenter", function () {
     gsap.to(".play-icon p", {
@@ -201,7 +198,10 @@ function videoEffect() {
       borderRadius: "30px",
     });
   });
+}
 
+// * Function for video interaction
+function videoEffect() {
   // * Handle hover effect and video interaction for page 4 image 1
   page4ImageDiv1.addEventListener("mouseenter", function () {
     videoCursor1();
@@ -259,7 +259,7 @@ function videoCursor1() {
     gsap.to(videoCursor1, {
       x: event.clientX - page4ImageDiv1.getBoundingClientRect().x,
       y: event.clientY - page4ImageDiv1.getBoundingClientRect().y,
-      duration: 0.3,
+      duration: 2,
       ease: "Power3.out",
     });
   });
@@ -280,7 +280,77 @@ function videoCursor2() {
 
 // * calling all functions
 locomotiveAnimation();
-navAnimation();
-imageEffect();
-videoEffect();
-splitEffect();
+playVdieo();
+
+function checkScreenSize() {
+  if (window.innerWidth > 576) {
+    splitEffect();
+    navAnimation();
+    videoEffect();
+    imageEffect();
+    svgAnimation();
+  } else {
+    let pageHeading = document.querySelector("#page1 h1");
+    pageHeading.innerHTML = `AI & ML Product Design Agency`;
+    document.querySelectorAll(".nav-part2").forEach((element) => {
+      const parent = element.parentNode;
+      while (element.firstChild) {
+        parent.insertBefore(element.firstChild, element);
+      }
+      element.remove();
+    });
+  }
+}
+
+window.onload = checkScreenSize;
+
+window.onresize = checkScreenSize;
+checkScreenSize();
+
+function resNavAnim() {
+  let responsiveNav = document.querySelector(".responsive-nav");
+  let hamburger = document.querySelector("#bar");
+  let line1 = document.querySelector("#line1");
+  let line2 = document.querySelector("#line2");
+
+  hamburger.addEventListener("click", () => {
+    line1.classList.toggle("toggle-line1");
+    line2.classList.toggle("toggle-line2");
+    toggle = 0;
+    let tl = gsap.timeline();
+    if (line1.classList.contains("toggle-line1")) {
+      tl.to(responsiveNav, {
+        opacity: 1,
+        display: "block",
+        duration: 0.2,
+        ease: "power3.out",
+      });
+      tl.from(".responsive-nav h5 span", {
+        y: 30,
+        opacity: 0,
+        duration: 0.3,
+        delay: -0.1,
+        stagger: {
+          amount: 0.6,
+        },
+      });
+    } else {
+      tl.to(responsiveNav, {
+        opacity: 0,
+        display: "none",
+        duration: 0.2,
+        ease: "power3.out",
+      });
+      tl.to(".responsive-nav h5 span", {
+        y: 0,
+        opacity: 1,
+        duration: 0.3,
+        delay: -0.1,
+        stagger: {
+          amount: 0.6,
+        },
+      });
+    }
+  });
+}
+resNavAnim();

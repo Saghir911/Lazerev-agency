@@ -40,6 +40,47 @@
      --border-top-color: #363737;
  }
 
+ #line1 {
+     display: block;
+     width: 30px;
+     height: 1px;
+     background-color: var(--white);
+     transition: all ease .3s;
+ }
+
+ #line2 {
+     width: 30px;
+     height: 1px;
+     background-color: var(--white);
+     transition: all ease .3s;
+ }
+
+ #bar {
+     width: 52px;
+     height: 52px;
+     background-color: #3d3d3d;
+     border-radius: 50%;
+     transition: all ease .3s;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 10px;
+     display: none;
+ }
+
+
+ .toggle-line1 {
+     transform: translateY(5.4px) rotate(45deg);
+ }
+
+ .toggle-line2 {
+     transform: translateY(-5.4px) rotate(-45deg);
+ }
+
+
+
+
 
 
  nav {
@@ -47,43 +88,16 @@
      top: 0;
      display: flex;
      align-items: flex-start;
+     justify-content: space-between;
      height: 13vh;
      width: 100%;
      padding: 2vw 7.5vw;
-     justify-content: space-between;
      z-index: 99;
      background-color: var(--black);
 
  }
 
- .nav-shrink {
-     animation: shrink 2s ease forwards;
- }
 
- @keyframes shrink {
-     from {
-         height: 13vh;
-     }
-
-     to {
-         height: 7vh;
-     }
- }
-
- .nav-orginal {
-     animation: orginal 1s ease forwards;
- }
-
- @keyframes orginal {
-     from {
-         height: 7vh;
-     }
-
-     to {
-         height: 13vh;
-
-     }
- }
 
 
  nav .logo {
@@ -203,9 +217,7 @@
      flex-direction: column;
  }
 
- .for-heading {
-     font-family: "For Heading";
- }
+
 
  #page1 h1 {
      text-transform: uppercase;
@@ -217,10 +229,17 @@
 
  }
 
+ .O-hide {
+     display: none;
+     opacity: 0;
+     visibility: hidden;
+ }
+
+
  .char {
      transform: translateY(250px);
      transition: transform .1s;
-    font-family: "for Heading";
+     font-family: "for Heading";
  }
 
  #page1 h1 svg {
@@ -229,6 +248,7 @@
      cursor: pointer;
      width: 6.5vw;
      transition: all ease .3s;
+     display: none;
      opacity: 0;
      transform: scale(0);
  }
@@ -258,8 +278,7 @@
  #page1 h5 {
      font-weight: 500;
      font-size: 1.2vw;
-     padding: 1vh 7.1px;
-     border: 1px solid #dadada;
+    padding: 1vh 7.1px;     border: 1px solid #dadada;
      border-radius: 50px;
  }
 
@@ -267,15 +286,6 @@
      border: none;
  }
 
- #moving-div {
-     margin-top: 10vh;
-     position: absolute;
-     bottom: 3%;
-     white-space: nowrap;
-     padding: 1.2vw;
-     overflow: hidden;
-     width: 44%;
- }
 
  #moving-div {
      margin-top: 10vh;
@@ -291,7 +301,7 @@
  #moving-div .move {
      display: inline-block;
      animation-name: mobe;
-     animation-duration: 10s;
+     animation-duration: 15s;
      animation-timing-function: linear;
      animation-iteration-count: infinite;
  }
@@ -809,6 +819,7 @@
      background: #4f5bff;
      border-radius: 50%;
      z-index: 40;
+     /* transition: all ease .5s; */
  }
 
  .videoCursor1 p {
