@@ -279,7 +279,7 @@ function videoCursor2() {
 }
 
 // * calling all functions
-locomotiveAnimation();
+// locomotiveAnimation();
 playVdieo();
 
 function checkScreenSize() {
@@ -338,14 +338,13 @@ function resNavAnim() {
       tl.to(responsiveNav, {
         opacity: 0,
         display: "none",
-        duration: 0.2,
+        duration: .5,
         ease: "power3.out",
       });
       tl.to(".responsive-nav h5 span", {
         y: 0,
         opacity: 1,
         duration: 0.3,
-        delay: -0.1,
         stagger: {
           amount: 0.6,
         },
