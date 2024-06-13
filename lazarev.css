@@ -33,6 +33,9 @@
 
 
 
+
+
+
  :root {
      --black: #101011;
      --white: #fffefe;
@@ -864,155 +867,21 @@
      column-gap: 50px;
  }
 
- .metastaq {
-     width: 31.5%;
-     height: 55vh;
+
+
+ /* .footer {
+     transform: translateY(100%);
+     height: 150px;
+     width: 100%;
+     padding: 0vh 4vw;
+     background-color: var(--black);
      display: flex;
-     flex-direction: column;
-     cursor: pointer;
-     position: relative;
-     border-top: 2px solid rgba(128, 128, 128, 0.153);
-     transition: all ease .3s;
+     align-items: center;
+     justify-content: space-between;
+     color: var(--white);
  }
 
- .metastaq:hover {
-     border-top: 2px solid var(--black);
-     cursor: pointer;
- }
-
- .metastaq h1 {
-     margin: 18px 10px 80px 10px;
-     font-weight: 400;
-     color: var(--black);
- }
-
- .metastaq p {
-     color: var(--black);
- }
-
-
- .metastaq i {
-     color: var(--black);
-     font-size: 1.5vw;
-     font-weight: 500;
-     margin-left: 30px;
-     transition: all ease .2s;
- }
-
- .metastaq i:nth-child(1) {
-     position: absolute;
-     top: 9%;
-     right: 49%;
- }
-
- .metastaq i:nth-child(2) {
-     position: absolute;
-     top: 11.5%;
-     right: 51.1%;
-     opacity: 0;
- }
-
- .metastaq:hover.metastaq h1 i:nth-child(1) {
-     transform: translate(50%, -50%);
-     opacity: 0;
- }
-
- .metastaq:hover.metastaq h1 i:nth-child(2) {
-     transform: translate(50%, -50%);
-     opacity: 1;
- }
-
- .metastaq:hover .metashtaq-content {
-     transform: scaleY(2);
-     background-color: red;
- }
-
- .metashtaq-content {
-     width: 100%;
-     height: 40vh;
-     transform: scaleY(1);
-     transform-origin: top;
-     transition: all ease .5s;
-     background-color: lightblue;
-     position: absolute;
-     z-index: 100;
-
- }
-
- .metastaq figure img {
-     width: 100%;
-     height: 100%;
- }
-
- .metastaq figure video {
-     width: 100%;
-     height: 100%;
- }
-
- .Sight figure {
-     width: 100%;
-     height: 100%;
- }
-
- .Sight figure img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
- }
-
- .Sight figure video {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
- }
-
- .Sight {
-     width: 31.5%;
-     height: 55vh;
-     display: flex;
-     flex-direction: column;
-     cursor: pointer;
-     position: relative;
-     border-top: 2px solid rgba(128, 128, 128, 0.153);
- }
-
- .Sight p {
-     color: var(--black);
- }
-
- .Sight h1 {
-     margin: 18px 10px 80px 10px;
-     font-weight: 400;
-     color: var(--black);
- }
-
- .Sight i {
-     color: var(--black);
-     font-size: 1.5vw;
-     font-weight: 500;
-     margin-left: 30px;
-     transition: all ease .2s;
- }
-
- .Sight i:nth-child(1) {
-     position: absolute;
-     top: 6%;
-     right: 59%;
- }
-
- .Sight i:nth-child(2) {
-     position: absolute;
-     top: 7.5%;
-     right: 61.1%;
-     opacity: 0;
- }
-
- .Sight:hover.Sight h1 i:nth-child(1) {
-     transform: translate(50%, -50%);
-     opacity: 0;
- }
-
- .Sight:hover.Sight h1 i:nth-child(2) {
-     transform: translate(50%, -50%);
-     opacity: 1;
- }
+ .footer p {
+     color: white;
+     font-size: 3vmin;
+ } */

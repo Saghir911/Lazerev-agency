@@ -278,9 +278,7 @@ function videoCursor2() {
   });
 }
 
-// * calling all functions
-// locomotiveAnimation();
-playVdieo();
+
 
 function checkScreenSize() {
   if (window.innerWidth > 576) {
@@ -338,7 +336,7 @@ function resNavAnim() {
       tl.to(responsiveNav, {
         opacity: 0,
         display: "none",
-        duration: .5,
+        duration: 0.5,
         ease: "power3.out",
       });
       tl.to(".responsive-nav h5 span", {
@@ -353,3 +351,25 @@ function resNavAnim() {
   });
 }
 resNavAnim();
+
+function footerAnim() {
+  gsap.to(".footer", {
+    y: -100,
+    duration: 1, // Animation duration
+    ease: "power3.out", // Easing function
+    scrollTrigger: {
+      scroller: "#main", // Specify your scroll container if necessary
+      trigger: ".footer", // Element to trigger animation
+      start: "top 90%", // Start animation when the top of .footer is 90% in view
+      end: "bottom 90%", // End animation when the bottom of .footer is 90% in view
+      scrub: 1, // Smooth scrolling effect
+      markers: true, // Add markers for debugging (optional)
+    },
+  });
+}
+
+// * calling all functions
+// footerAnim()
+locomotiveAnimation();
+playVdieo();
+
