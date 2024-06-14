@@ -361,15 +361,23 @@ function footerAnim() {
       scroller: "#main", // Specify your scroll container if necessary
       trigger: ".footer", // Element to trigger animation
       start: "top 90%", // Start animation when the top of .footer is 90% in view
-      end: "bottom 90%", // End animation when the bottom of .footer is 90% in view
+      end: "bottom 50%", // End animation when the bottom of .footer is 90% in view
       scrub: 1, // Smooth scrolling effect
       markers: true, // Add markers for debugging (optional)
     },
   });
 }
 
+
+
+// Function to make the navigation bar sticky after scrolling 50vh
+
+
+
+
 // * calling all functions
 // footerAnim()
 locomotiveAnimation();
 playVdieo();
+// footerAnim()
 
