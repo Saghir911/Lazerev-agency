@@ -278,10 +278,8 @@ function videoCursor2() {
   });
 }
 
-
-
 function checkScreenSize() {
-  if (window.innerWidth > 576) {
+  if (window.innerWidth > 576 && window.innerWidth > 1200) {
     splitEffect();
     navAnimation();
     videoEffect();
@@ -368,16 +366,10 @@ function footerAnim() {
   });
 }
 
-
-
 // Function to make the navigation bar sticky after scrolling 50vh
-
-
-
 
 // * calling all functions
 // footerAnim()
 locomotiveAnimation();
 playVdieo();
 // footerAnim()
-
