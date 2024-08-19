@@ -259,7 +259,7 @@ function videoCursor1() {
     gsap.to(videoCursor1, {
       x: event.clientX - page4ImageDiv1.getBoundingClientRect().x,
       y: event.clientY - page4ImageDiv1.getBoundingClientRect().y,
-      duration: 2,
+      duration: 1,
       ease: "Power3.out",
     });
   });
@@ -272,7 +272,7 @@ function videoCursor2() {
     gsap.to(videoCursor2, {
       x: event.clientX - page4ImageDiv2.getBoundingClientRect().x,
       y: event.clientY - page4ImageDiv2.getBoundingClientRect().y,
-      duration: 0.3,
+      duration: 1,
       ease: "Power3.out",
     });
   });
