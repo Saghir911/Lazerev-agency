@@ -819,7 +819,7 @@
      background: #4f5bff;
      border-radius: 50%;
      z-index: 40;
-     /* transition: all ease .5s; */
+     /* transition: all cubic-bezier(.39, .575, .565, 1) .2s; */
  }
 
  .videoCursor1 p {

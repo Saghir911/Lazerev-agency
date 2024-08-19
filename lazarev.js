@@ -259,11 +259,13 @@ function videoCursor1() {
     gsap.to(videoCursor1, {
       x: event.clientX - page4ImageDiv1.getBoundingClientRect().x,
       y: event.clientY - page4ImageDiv1.getBoundingClientRect().y,
-      duration: 1,
-      ease: "Power3.out",
+       duration: 0.7, // or slightly increase to 0.3 for smoother motion
+      ease: "power2.out",
+      overwrite: "auto",/ ensures the animation doesn't stack
     });
   });
 }
+
 
 // * Function to move video cursor for page 4 image 2
 function videoCursor2() {
@@ -272,8 +274,9 @@ function videoCursor2() {
     gsap.to(videoCursor2, {
       x: event.clientX - page4ImageDiv2.getBoundingClientRect().x,
       y: event.clientY - page4ImageDiv2.getBoundingClientRect().y,
-      duration: 1,
-      ease: "Power3.out",
+      duration: 0.7, // or slightly increase to 0.3 for smoother motion
+      ease: "power2.out",
+      overwrite: "auto",
     });
   });
 }
