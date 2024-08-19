@@ -259,18 +259,13 @@ function videoCursor1() {
     gsap.to(videoCursor1, {
       x: event.clientX - page4ImageDiv1.getBoundingClientRect().x,
       y: event.clientY - page4ImageDiv1.getBoundingClientRect().y,
-<<<<<<< HEAD
-      duration: 0.7, // or slightly increase to 0.3 for smoother motion
-      ease: "power2.out",
-      overwrite: "auto", // ensures the animation doesn't stack
-=======
-       duration: 0.7, // or slightly increase to 0.3 for smoother motion
-      ease: "power2.out",
-      overwrite: "auto",/ ensures the animation doesn't stack
->>>>>>> 206fd138a3694e39e6090e7555616a93802be1dd
+      duration: 0.7, // Adjust duration for smoother motion
+      ease: "power2.out", // Easing function
+      overwrite: "auto", // Ensures the animation doesn't stack
     });
   });
 }
+
 
 
 // * Function to move video cursor for page 4 image 2
